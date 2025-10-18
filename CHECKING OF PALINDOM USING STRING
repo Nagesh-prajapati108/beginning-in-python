@@ -1,0 +1,16 @@
+print("ENTER THE NUMBER")
+num=int(input())
+
+absStrNum=str(abs(num))
+rev=''
+for c in absStrNum:
+   rev=c+rev
+   print(rev)
+   
+if(num<0):
+   rev='-'+ rev
+   
+if(num==int(rev)):
+   print('PALINDROM')
+else:
+   print('NOT PALINDROM')
