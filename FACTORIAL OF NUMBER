@@ -1,0 +1,14 @@
+print("ENTER THE NUMBER")
+n=int(input())
+
+i=1
+answer=1
+if(n<0):
+   print("not defined")
+else:
+   while(i<=n):
+       answer=answer*i
+       i=i+1
+
+
+   print(answer)
