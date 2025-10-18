@@ -5,7 +5,6 @@ absStrNum=str(abs(num))
 rev=''
 for c in absStrNum:
    rev=c+rev
-   print(rev)
    
 if(num<0):
    rev='-'+ rev
