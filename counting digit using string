@@ -1,0 +1,8 @@
+num=int(input('enter the number:'))
+strnum=str(num)
+digit=0
+
+for c in strnum:
+    digit=digit+1
+
+print(digit)
