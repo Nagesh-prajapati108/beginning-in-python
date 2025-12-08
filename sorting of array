@@ -1,0 +1,17 @@
+x=[]
+l=[]
+n=int(input('enter length of array:'))
+for i in range(n):
+  a=int(input())
+  l.append (a)
+print('entered array: ' , l)
+
+while(len(l)>0):
+  min=l[0]
+  for i in range(len(1)):
+    if(l[i]<min):
+      min=l[i]
+
+x.append (min)
+l.remove (min)
+print('sorted array:' , x)
