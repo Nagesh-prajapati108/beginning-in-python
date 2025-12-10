@@ -1,0 +1,26 @@
+def add(a,b):
+  ans=a+b
+  return ans
+
+#here we are returning a value while in print we are printing the answer. both returning and printing have different meaning.
+
+
+def discount(cost,d):
+   ans=cost-(cost*(d/100))
+   return ans
+
+c=int(input("enter the cost price:"))
+disc=int(input("enter the discount:"))
+
+print("the final price is:",discount(c,disc))
+
+
+def list_min(l):
+   mini=l[0]
+   for i in range(len(l)):
+     if(l[i]<mini):
+       mini=l[i]
+
+   return mini
+
+
