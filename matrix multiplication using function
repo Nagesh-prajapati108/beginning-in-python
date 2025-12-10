@@ -1,4 +1,4 @@
-#initialize a matrix c of  order 3 and all values '0'
+#initialize c as all value'0'
 def initialize_mat(dim):
   c=[]
   for i in range(dim):
