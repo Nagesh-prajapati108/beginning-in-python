@@ -1,0 +1,7 @@
+def list_appendbefore(l,z):
+  newl=[]
+  for i in range(len(z)):
+    newl.append(z[i])
+  for i in range(len(l)):
+    newl.append(l[i])
+  return newl
