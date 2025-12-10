@@ -1,0 +1,8 @@
+def add(a,b):
+  ans=a+b
+  print(ans)
+
+
+def discount(cost,d):
+  ans=cost-(cost*(d/100))
+  print(ans)
