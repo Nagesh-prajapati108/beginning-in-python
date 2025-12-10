@@ -1,0 +1,47 @@
+#initialize a matrix c of  order 3 and all values '0'
+def initialize_mat(dim):
+  c=[]
+  for i in range(dim):
+    c.append([])
+  for i in range(dim):
+    for j in range(dim):
+      c[i].append(0)
+  return c
+
+
+#dot product of two list
+def dot_product(u,v):
+  dim=len(u)
+  ans=0
+  for i in range(dim):
+    ans=ans+(u[i]*v[i])
+  return ans
+
+
+#picking ith row
+def row(M,i):
+  l=[]
+  dim=len(M)
+  for k in range(dim):
+    l.append(M[i][k])
+  return l
+
+
+#picking jth column
+def column(M,j):
+  dim=len(M)
+  l=[]
+  for k in range(dim):
+    l.append(M[k][j])
+  return l
+
+
+#multiplication of ith row and jith coloumn
+def mat_mul(A,B):
+  dim=len(A)
+  c=initialize_mat(dim)
+  for i in range(dim):
+    for j in range(dim):
+      c[i][j]=dot_product(row(A,i),column(B,j))
+  return c
+  
