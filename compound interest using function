@@ -1,0 +1,9 @@
+import math
+def  Compound_Interest(principal,rate,time):
+  A= principal* pow((1+(rate/100)),time)
+  comp=  A-principal
+  return comp
+
+def Simple_Interest(principal,rate,time):
+  SI=((principal*rate*time)/100
+  return SI
