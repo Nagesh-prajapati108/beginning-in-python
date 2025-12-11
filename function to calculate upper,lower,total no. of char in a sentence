@@ -1,0 +1,26 @@
+def upper(s):
+  upper = 0
+  for c in s:
+    if(c.isupper()):
+      upper+=1
+  return ("total no. of upper case:",upper)
+
+  def lower(s):
+    lower = 0
+    for c in s:
+      if(c.islower()):
+        lower+=1
+    return ("total no. of lower case:",lower)
+
+  def words(s):
+    words = 0
+    for c in s:
+      if(c==' '):
+        words+=1
+    return ("total no. of words:",words)
+
+  def characters(s):
+    char = 0
+    for c in s:
+        char+=1
+    return ("total no. of characters:",char)
