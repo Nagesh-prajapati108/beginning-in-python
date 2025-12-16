@@ -1,0 +1,19 @@
+def binary_search(l,k):
+  beg=0
+  end=len(1)-1
+  
+  while(end-beg>1):
+    mid=(end+beg)//2
+    
+    if(l[mid] == k):
+      return 1
+    
+    if(l[mid]>k):
+      end=mid-1
+    
+    if(l[mid]<k):
+      beg=mid+1
+  if(l[beg] == k or l[end] == k):
+    return 1
+  else :
+    return 0
