@@ -1,0 +1,13 @@
+def list_min(l):
+  mini=l[0]
+  for i in range(len(l)):
+    if(l[i]<mini):
+      mini=l[i]
+  return mini
+
+def sort(l) :
+  if(l == []) or (len(l) == 1):
+    return l
+    m=mini(l)
+    l.remove (m)
+  return [m]+sort(l)
