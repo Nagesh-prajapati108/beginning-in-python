@@ -1,6 +1,6 @@
 def binary_search(l,k):
   beg=0
-  end=len(1)-1
+  end=len(l)-1
   
   while(end-beg>1):
     mid=(end+beg)//2
