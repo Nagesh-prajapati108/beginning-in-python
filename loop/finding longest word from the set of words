@@ -1,5 +1,6 @@
 word = input('Enter a word:')
 maxLen =0
+
 while(word !='-1'):
   count = 0
   for letter in word:
