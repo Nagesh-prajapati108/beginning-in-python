@@ -21,19 +21,20 @@ def sq_perimeter(l):
 
 polygon=''
 while(polygon!='exit'):
-
-    polygon= input("enter the polygon (circlr/square/rectangle/exit): ")
+    print("POLYGONS\ncircle\nsquare\nrectangle\nexit\n")
+    polygon= input("choose the polygon: ")
     property= ''
 
     if(polygon=='circle'):
         r=float(input("enter the radius: "))
         while(property!='back'):
-            property= input("enter the property(area/circumference/back): ")
+            print("POLYGON PROPERTY\narea\ncircumference\nback\n")
+            property= input("choose property: ")
             if(property=='area'):
-                print('area of circle is: ',circlr_area())
+                print('area of circle is: ',circlr_area(r))
 
             elif(property=='circumference'):
-                print("circumference of circle: ",circlr_perimeter())
+                print("circumference of circle: ",circlr_perimeter(r))
 
             elif(property=='back'):
                 break
@@ -45,12 +46,13 @@ while(polygon!='exit'):
         l=int(input("enter the length: "))
         b=int(input("enter the breadth: "))
         while(property!='back'):
-            property= input("enter the property(area/perimeter/back): ")
+            print("POLYGON PROPERTY\narea\nperimeter\nback\n")
+            property= input("choose property: ")
             if(property=='area'):
-                print("area of rectangle: ",rec_area())
+                print("area of rectangle: ",rec_area(l,b))
 
             elif(property=='perimeter'):
-                print("perimeter of rectangle: " ,rec_perimeter())
+                print("perimeter of rectangle: " ,rec_perimeter(l,b))
 
             elif(property=='back'):
                 break
@@ -62,12 +64,13 @@ while(polygon!='exit'):
     elif(polygon=='square'):
         l=int(input("enter the length of side: "))
         while(property!='back'):
-            property= input("enter the property(area/perimeter/back): ")
+            print("POLYGON PROPERTY\narea\nperimeter\nback\n")
+            property= input("choose property: ")
             if(property=='area'):
-                print("area of square: ",sq_area())
+                print("area of square: ",sq_area(l))
 
             elif(property=='perimeter'):
-                print("perimeter of square: " ,sq_perimeter())
+                print("perimeter of square: " ,sq_perimeter(l))
 
             elif(property=='back'):
                 break
@@ -77,5 +80,4 @@ while(polygon!='exit'):
 
     else:
         print("enter correct input")
-
 
